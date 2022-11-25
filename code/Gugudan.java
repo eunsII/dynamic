@@ -1,22 +1,21 @@
-package com.githrd.jennie.controller;
+package whistle;
 
-import java.io.IOException;
+import java.io.*;
+import java.util.*;
 
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import java.util.*
-;public class Gugudan implements BlpInter {
+import javax.servlet.*;
+import javax.servlet.annotation.*;
+import javax.servlet.http.*;
 
-	@Override
-	public String exec(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+@WebServlet("/gugudan.jny")
+public class Gugudan extends HttpServlet {
+	public void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		req.setAttribute("COLOR", getColorList());
-		return "/gugudan";
+		req.getRequestDispatcher("/WEB-INF/views/gugudan.jsp").forward(req, resp);
 	}
 	
-
-	public ArrayList getColorList() {
-		ArrayList list = new ArrayList();
+	public ArrayList<String> getColorList() {
+		ArrayList<String> list = new ArrayList<String>();
 		list.add("w3-red");
 		list.add("w3-pink");
 		list.add("w3-purple");
