@@ -8,4 +8,4 @@
   <li>각 단의 색상은 컨트롤러에서 넘겨준 리스트에서 꺼내서 사용하는 것으로 한다.</li>
 </ul>
 <br>
-<img src="https://github.com/eunsII/dynamic/blob/main/result/gugudan_result.png?raw=true" width="750px" height="auto">
+<img src="https://github.com/eunsII/dynamic/blob/main/result/result.png?raw=true" width="750px" height="auto">
