@@ -13,7 +13,7 @@
 		<h1 class="w3-pink w3-margin-bottom w3-padding w3-card-4">구구단</h1>
 <c:forEach var="dan" begin="2" end="9" varStatus="st">
 		<div class="inblock w3-card-4 w3-margin w150">
-			<div class="w3-col ${COLOR[st.index]}">
+			<div class="w3-col ${COLOR[st.count - 1]}">
 				<h3>${dan} 단</h3>
 			</div>
 			<div class="w3-col w3-padding">
